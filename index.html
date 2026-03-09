@@ -11,52 +11,99 @@
   <body>
     <!-- Rating state start -->
 
-    <form class="rating-card" id="ratingForm">
-      <div class="rating-card__icon">
-        <img src="/src/assets/images/icon-star.svg" alt="Star icon" />
-      </div>
+    <main>
+      <form class="rating-card" id="ratingForm" aria-labelledby="formTitle">
+        <div class="rating-card__icon">
+          <img src="/src/assets/images/icon-star.svg" alt="Star icon" />
+        </div>
 
-      <div class="rating-card__content">
-        <h1 class="rating-card__title">How did we do?</h1>
+        <div class="rating-card__content">
+          <h1 class="rating-card__title" id="formTitle">How did we do?</h1>
 
-        <p class="rating-card__description">
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </p>
+          <p class="rating-card__description">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
 
-        <ol class="rating-card__options" id="ratingOptions">
-          <li>
-            <button class="rating-card__option" type="button">1</button>
-          </li>
+          <ol
+            class="rating-card__options"
+            id="ratingOptions"
+            role="radiogroup"
+            aria-label="Rating options"
+          >
+            <li>
+              <button
+                class="rating-card__option"
+                type="button"
+                role="radio"
+                aria-checked="false"
+                aria-label="Rate 1 out of 5"
+              >
+                1
+              </button>
+            </li>
 
-          <li>
-            <button class="rating-card__option" type="button">2</button>
-          </li>
+            <li>
+              <button
+                class="rating-card__option"
+                type="button"
+                role="radio"
+                aria-checked="false"
+                aria-label="Rate 2 out of 5"
+              >
+                2
+              </button>
+            </li>
 
-          <li>
-            <button class="rating-card__option" type="button">3</button>
-          </li>
+            <li>
+              <button
+                class="rating-card__option"
+                type="button"
+                role="radio"
+                aria-checked="false"
+                aria-label="Rate 3 out of 5"
+              >
+                3
+              </button>
+            </li>
 
-          <li>
-            <button class="rating-card__option" type="button">4</button>
-          </li>
+            <li>
+              <button
+                class="rating-card__option"
+                type="button"
+                role="radio"
+                aria-checked="false"
+                aria-label="Rate 4 out of 5"
+              >
+                4
+              </button>
+            </li>
 
-          <li>
-            <button class="rating-card__option" type="button">5</button>
-          </li>
-        </ol>
-      </div>
+            <li>
+              <button
+                class="rating-card__option"
+                type="button"
+                role="radio"
+                aria-checked="false"
+                aria-label="Rate 5 out of 5"
+              >
+                5
+              </button>
+            </li>
+          </ol>
+        </div>
 
-      <button type="submit" class="rating-card__submit" id="submitBtn">
-        Submit
-      </button>
-    </form>
+        <button type="submit" class="rating-card__submit" id="submitBtn">
+          Submit
+        </button>
+      </form>
+    </main>
 
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
 
-    <div class="message-card" id="messageCard">
+    <section class="message-card" id="messageCard">
       <img
         src="/src/assets/images/illustration-thank-you.svg"
         alt="Thank you illustration"
@@ -74,7 +121,7 @@
           more support, don’t hesitate to get in touch!
         </p>
       </div>
-    </div>
+    </section>
 
     <!-- Thank you state end -->
 
