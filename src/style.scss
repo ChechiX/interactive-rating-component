@@ -1,0 +1,32 @@
+$white: #ffffff;
+$black: #000000;
+$orange: #fc7614;
+$grey-500: #969fad;
+$grey-900: #262e38;
+$grey-950: #131518;
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+body {
+  background-color: $grey-950;
+  padding: 0 1.5rem;
+}
+
+.rating-state {
+  background: radial-gradient(ellipse at top, #232a34 0%, #181e27 100%);
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
