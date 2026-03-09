@@ -1,7 +1,6 @@
 const ratingForm = document.getElementById('ratingForm');
 const ratingOptions = document.getElementById('ratingOptions');
 const ratingOptionButtons = ratingOptions.querySelectorAll('button');
-const submitBtn = document.getElementById('submitBtn');
 const selectedRating = document.getElementById('selectedRating');
 const messageCard = document.getElementById('messageCard');
 
@@ -21,9 +20,11 @@ ratingOptionButtons.forEach((button) => {
   button.addEventListener('click', () => {
     ratingOptionButtons.forEach((btn) => {
       btn.classList.remove('rating-card__option--active');
+      btn.setAttribute('aria-checked', 'false');
     });
 
     button.classList.toggle('rating-card__option--active');
+    button.setAttribute('aria-checked', 'true');
 
     selectedRating.textContent = button.textContent;
   });
